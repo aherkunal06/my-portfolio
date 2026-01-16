@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kunal Aher - AWS & DevOps Engineer | Portfolio showcasing cloud architecture, CI/CD pipelines, and infrastructure automation expertise">
+    <meta name="keywords" content="AWS, DevOps, Cloud Engineer, Kubernetes, Docker, CI/CD, Terraform">
+    <meta name="author" content="Kunal Aher">
+    <title>Kunal Aher | AWS & DevOps Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>KA<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <i class="fas fa-cloud"></i>
+                <span>Available for Opportunities</span>
+            </div>
+            <h1 class="hero-title animate-slide-up">
+                Hi, I'm <span class="gradient-text">Kunal Aher</span>
+            </h1>
+            <div class="hero-subtitle animate-slide-up delay-1">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description animate-slide-up delay-2">
+                Building secure, automated, and future-ready cloud infrastructures
+                with expertise in AWS, Azure, and modern DevOps practices.
+            </p>
+            <div class="hero-buttons animate-slide-up delay-3">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i>
+                    Get In Touch
+                </a>
+            </div>
+            <div class="hero-stats animate-fade-in delay-4">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>+
+                    <span class="stat-label">Cloud Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="70">0</span>%
+                    <span class="stat-label">Deployment Time Reduced</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span>+
+                    <span class="stat-label">AWS Services</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="tech-orbit">
+                <div class="orbit-ring ring-1">
+                    <div class="orbit-icon" style="--delay: 0s;"><i class="fab fa-aws"></i></div>
+                    <div class="orbit-icon" style="--delay: 2s;"><i class="fab fa-docker"></i></div>
+                </div>
+                <div class="orbit-ring ring-2">
+                    <div class="orbit-icon" style="--delay: 1s;"><i class="fas fa-dharmachakra"></i></div>
+                    <div class="orbit-icon" style="--delay: 3s;"><i class="fab fa-microsoft"></i></div>
+                    <div class="orbit-icon" style="--delay: 5s;"><i class="fab fa-jenkins"></i></div>
+                </div>
+                <div class="orbit-ring ring-3">
+                    <div class="orbit-icon" style="--delay: 0.5s;"><i class="fab fa-linux"></i></div>
+                    <div class="orbit-icon" style="--delay: 2.5s;"><i class="fab fa-github"></i></div>
+                    <div class="orbit-icon" style="--delay: 4.5s;"><i class="fas fa-code-branch"></i></div>
+                    <div class="orbit-icon" style="--delay: 6.5s;"><i class="fab fa-python"></i></div>
+                </div>
+                <div class="orbit-center">
+                    <i class="fas fa-server"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p class="about-description">
+                        Aspiring <strong>AWS & DevOps Engineer</strong> with hands-on experience in AWS services.
+                        Skilled in deploying, managing, and optimizing cloud-based solutions with
+                        <span class="highlight">high availability</span> and <span class="highlight">security</span>.
+                    </p>
+                    <p class="about-description">
+                        Proficient in DevOps practices including <strong>CI/CD</strong>, <strong>automation</strong>,
+                        <strong>containerization</strong>, and <strong>Infrastructure as Code</strong>. Passionate about
+                        building secure, automated, and future-ready cloud infrastructures.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.E. Electronics & Computer</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span>Currently at Ipshopy Pvt. Ltd.</span>
+                        </div>
+                    </div>
+                    <div class="about-social">
+                        <a href="tel:+919356950811" class="social-link" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:aherkunal2002@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/aherkunal" target="_blank" class="social-link"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/aherkunal" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card glass-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Architecture</h3>
+                        <p>Designing scalable, highly available systems on AWS & Azure</p>
+                    </div>
+                    <div class="highlight-card glass-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>CI/CD Expertise</h3>
+                        <p>End-to-end pipeline automation with zero downtime deployments</p>
+                    </div>
+                    <div class="highlight-card glass-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>Containerization</h3>
+                        <p>Docker & Kubernetes for consistent, portable applications</p>
+                    </div>
+                    <div class="highlight-card glass-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security First</h3>
+                        <p>IAM, SSL/TLS, KMS, and security best practices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Cloud & Tools -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon cloud-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure</span>
+                        <span class="skill-tag"><i class="fas fa-cube"></i> Terraform</span>
+                        <span class="skill-tag"><i class="fas fa-layer-group"></i> CloudFormation</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</span>
+                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+                        <span class="skill-tag"><i class="fas fa-cogs"></i> Ansible</span>
+                    </div>
+                </div>
+
+                <!-- Compute & Networking -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon network-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Compute & Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">Auto Scaling</span>
+                        <span class="skill-tag">ELB</span>
+                        <span class="skill-tag">VPC</span>
+                        <span class="skill-tag">Route 53</span>
+                        <span class="skill-tag">NAT Gateway</span>
+                        <span class="skill-tag">Security Groups</span>
+                        <span class="skill-tag">NACL</span>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon os-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="skill-tag"><i class="fab fa-redhat"></i> Redhat</span>
+                        <span class="skill-tag"><i class="fab fa-windows"></i> Windows</span>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon code-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> Shell/Bash</span>
+                    </div>
+                </div>
+
+                <!-- Storage & Databases -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon storage-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Storage & Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">EFS</span>
+                        <span class="skill-tag">RDS</span>
+                        <span class="skill-tag">Redshift</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon security-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security & Compliance</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">IAM</span>
+                        <span class="skill-tag">WAF</span>
+                        <span class="skill-tag">ACM</span>
+                        <span class="skill-tag">SSL/TLS</span>
+                        <span class="skill-tag">MFA</span>
+                        <span class="skill-tag">KMS</span>
+                        <span class="skill-tag">Bucket Policies</span>
+                    </div>
+                </div>
+
+                <!-- Monitoring -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon monitor-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Monitoring & Optimization</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">CloudTrail</span>
+                        <span class="skill-tag">Cost Optimization</span>
+                    </div>
+                </div>
+
+                <!-- CI/CD & IaC -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon cicd-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h3>CI/CD & IaC</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jenkins Pipelines</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub Actions</span>
+                        <span class="skill-tag">GitLab CI</span>
+                        <span class="skill-tag">CodePipeline</span>
+                        <span class="skill-tag">Terraform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="timeline-title">DevOps Engineer</h3>
+                                <span class="timeline-company">Ipshopy Pvt. Ltd.</span>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Nov 2025 – Present</span>
+                            </div>
+                        </div>
+                        <div class="timeline-tools">
+                            <span class="tool-badge">Azure</span>
+                            <span class="tool-badge">AWS</span>
+                            <span class="tool-badge">Linux</span>
+                            <span class="tool-badge">Git</span>
+                            <span class="tool-badge">GitHub Actions</span>
+                            <span class="tool-badge">Docker</span>
+                            <span class="tool-badge">Nginx</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Designed and deployed end-to-end <strong>CI/CD pipelines</strong> using GitHub Actions
+                                and Azure DevOps for production and staging environments</li>
+                            <li>Led migration from manual FTP uploads to automated CI/CD delivery, <strong>reducing
+                                    deployment time by 70%</strong></li>
+                            <li>Configured core Azure services: App Service, VM, Storage, VNet, NSGs, and Load Balancer
+                                for secure, scalable infrastructure</li>
+                            <li>Containerized applications using Docker and deployed via <strong>Azure Container
+                                    Instances</strong> and <strong>AKS</strong></li>
+                            <li>Implemented Nginx reverse proxy on Azure VM with SSL certificates, domain routing,
+                                caching, and performance tuning</li>
+                            <li>Automated repetitive tasks using Azure CLI scripting, enhancing overall DevOps workflow
+                                efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3 class="timeline-title">AWS & DevOps Trainee</h3>
+                                <span class="timeline-company">Project-Based Training - Naresh IT</span>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Jan 2025 – Oct 2025</span>
+                            </div>
+                        </div>
+                        <div class="timeline-tools">
+                            <span class="tool-badge">AWS</span>
+                            <span class="tool-badge">Linux</span>
+                            <span class="tool-badge">Git</span>
+                            <span class="tool-badge">GitHub Actions</span>
+                            <span class="tool-badge">Docker</span>
+                            <span class="tool-badge">K8S</span>
+                            <span class="tool-badge">Terraform</span>
+                            <span class="tool-badge">Nginx</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Designed and deployed full <strong>CI/CD pipelines</strong> using GitHub Actions with
+                                automated deployments on AWS EC2 and cPanel</li>
+                            <li>Configured AWS services including EC2, IAM, S3, VPC, Security Groups, and Load Balancers
+                                for scalable web applications</li>
+                            <li>Set up Linux environments and automated provisioning using <strong>Bash
+                                    scripting</strong> for deployment repeatability</li>
+                            <li>Implemented <strong>Docker-based workflows</strong> for Next.js and Node.js applications
+                            </li>
+                            <li>Configured Nginx reverse proxy for production-grade hosting with SSL and performance
+                                optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">AWS Architecture</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Highly Available 3-Tier Architecture</h3>
+                        <p class="project-description">
+                            Designed and deployed a production-ready 3-Tier AWS Architecture with presentation,
+                            application, and database layers for improved scalability and high availability.
+                        </p>
+                        <div class="project-tech">
+                            <span>Amazon Linux 2023</span>
+                            <span>RDS</span>
+                            <span>VPC</span>
+                            <span>Route53</span>
+                            <span>EC2</span>
+                            <span>S3</span>
+                            <span>CloudFront</span>
+                            <span>Nginx</span>
+                        </div>
+                        <ul class="project-highlights">
+                            <li><i class="fas fa-check-circle"></i> Load Balancing & Auto Scaling with ELB and ASG</li>
+                            <li><i class="fas fa-check-circle"></i> RDS MySQL in private subnet with automated backups
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> CloudWatch Monitoring & Logging integration</li>
+                            <li><i class="fas fa-check-circle"></i> High availability and fault tolerance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">CI/CD Pipeline</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Automated CI/CD Pipeline for Web Application</h3>
+                        <p class="project-description">
+                            Developed an end-to-end CI/CD pipeline automating build, test, code analysis,
+                            and deployment for a containerized web application with zero downtime delivery.
+                        </p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>Maven</span>
+                            <span>Nexus</span>
+                            <span>S3</span>
+                            <span>Tomcat</span>
+                            <span>SonarQube</span>
+                            <span>Docker Hub</span>
+                        </div>
+                        <ul class="project-highlights">
+                            <li><i class="fas fa-check-circle"></i> Jenkins triggered on GitHub commits</li>
+                            <li><i class="fas fa-check-circle"></i> Quality checks with SonarQube integration</li>
+                            <li><i class="fas fa-check-circle"></i> Artifact management with Nexus and S3</li>
+                            <li><i class="fas fa-check-circle"></i> Zero downtime deployments to AWS EC2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Awards & <span class="gradient-text">Certifications</span></h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python For Data Science</h3>
+                        <span class="cert-issuer">NPTEL</span>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>National Level Project Competition</h3>
+                        <span class="cert-issuer">TECH EXPO-2025 (PREC Loni)</span>
+                    </div>
+                    <div class="cert-badge award">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-card glass-card">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                    <h3>B.E. Electronics and Computer</h3>
+                    <p class="education-school">PREC College, Loni</p>
+                    <div class="education-details">
+                        <span class="education-date">
+                            <i class="far fa-calendar-check"></i>
+                            Graduated: 2025
+                        </span>
+                        <span class="education-grade">
+                            <i class="fas fa-chart-line"></i>
+                            CGPA: 8.05 / 10
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">
+                    Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+                </p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919356950811">+91-9356950811</a>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:aherkunal2002@gmail.com">aherkunal2002@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/aherkunal" target="_blank">linkedin.com/in/aherkunal</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>KA<span class="logo-bracket">/&gt;</span>
+                    <p>Building the future, one deployment at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:aherkunal2002@gmail.com" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/aherkunal" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/aherkunal" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kunal Aher. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

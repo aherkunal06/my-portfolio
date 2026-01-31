@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    DEPLOY_DIR = /usr/share/nginx/html
+    DEPLOY_DIR = "/usr/share/nginx/html"
   }
   stages {
     stage("checkout"){

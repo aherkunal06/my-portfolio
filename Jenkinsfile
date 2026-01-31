@@ -12,8 +12,8 @@ pipeline {
     stage("deploy to nginx") {
       steps {
         sh '''
-        cp -r . $DEPLOY_DIR
-        echo "your app is live " 
+        sudo cp -r . $DEPLOY_DIR
+        sudo echo "your app is live " 
         sudo systemctl restart nginx
         '''
         

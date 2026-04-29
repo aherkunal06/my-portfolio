@@ -78,8 +78,8 @@ function initTypingEffect() {
     const titles = [
         'AWS & DevOps Engineer',
         'Cloud Architect',
-        'CI/CD Specialist',
-        'Infrastructure Automation Expert',
+        'CI/CD',
+        'Infrastructure Automation',
         'Kubernetes Enthusiast'
     ];
     
